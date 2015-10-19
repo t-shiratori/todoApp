@@ -1,0 +1,131 @@
+body{
+	margin: 1em 0 6em 0;
+	font-size: 14px;
+}
+
+.cf{
+	display: block;
+  	clear: both;
+  	content: "";
+}
+
+.title__page{
+	text-align: center;
+}
+
+.glyphicon{
+	margin: 0 0.5em 0 0;
+}
+
+.title{
+	margin: 0 0 0.8em 0;
+	padding: 0 0 0.5em 0;
+	border-bottom: solid 4px #cecece;
+	font-size: 1.4em;
+}
+
+.section{
+	margin-bottom: 2em;
+	margin-right: 0;
+	margin-left: 0;
+	padding-top: 20px;
+	&:after{
+		display: block;
+	  	clear: both;
+	  	content: "";
+	}
+}
+
+.addTask{
+	.navbar-form{
+		width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+		.form-group{
+			width: 100%;
+			.addTask__ttl{
+				width: 100%;
+				margin: 0 0 1em 0;
+			}
+			.addTask__body{
+				width: 100%;
+				margin: 0 0 3em 0;
+				padding: 0.5em;
+			}
+		}
+	}
+	.addTask__label{
+		margin-right: 10px;
+	}
+	.addTask__btn{
+	}
+	.notice{
+		margin: 0 0 2em 0;
+		color: #ef5734;
+	}
+	.notice__maxlength{
+		color: #2baf2b;
+	}
+}
+
+.tasks__box{
+	margin: 0 0 2em 0;
+	padding: 1em;
+	border: solid 1px #cecece;
+	max-height: 200px;
+	overflow: scroll;
+}
+
+.tasks__box__list{
+
+	margin: 0 0 1em 0;
+	list-style: none;
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	.tasks__form{
+		&:after{
+			@extend .cf;
+		}
+	}
+
+	.tasks__box__checkBox{
+		float: left;
+		display: block;
+		margin: 0;
+		margin-right: 15px;
+		input{
+			position: relative;
+			margin: 0;
+		}
+	}
+
+	.tasks__box__txt{
+		float: left;
+		margin-right: 15px;
+		label{
+			margin: 0;
+			font-weight: normal;
+		}
+	}
+
+}
+
+.noTask{
+	margin: 0 0 2em 0;
+}
+
+.btnBack{
+	margin: 0 0 4em 0;
+}
+
+
+
+
+@media (min-width: 768px){
+	.container{
+		width: 900px;
+	}
+}
+
