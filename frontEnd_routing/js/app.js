@@ -32,6 +32,8 @@ ngModule
 .service('myFuncs',["$rootScope",function($rootScope){
 	//ビジネスロジックはここに書く
 	//今回は使ってない
+	//普通はサービスやコントローラーの記述がもっと大量になるはずなので、
+	//service.jsとかcontroller.jsのように別ファイルにしてしまったほうがいいかもしれない
 }])
 /*------------------------
 
