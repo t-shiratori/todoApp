@@ -33,7 +33,7 @@
                                     <input ng-model="task.checked" ng-change="update_deltasks()" ng-value="task._id" ng-attr-id="{{task._id}}" value="" name="task_added" type="checkbox">
                                 </div>
                                 <div class="tasks__box__txt">
-                                    <label><a ng-bind="task.title" ng-attr-for="{{task._id}}" ng-href="#/edit/{{task._id}}"></a></label>
+                                    <label><a ng-bind="task.title" ng-attr-for="{{task._id}}" ng-href="edit/{{task._id}}"></a></label>
                                 </div>
                             </form>
                         </li>
